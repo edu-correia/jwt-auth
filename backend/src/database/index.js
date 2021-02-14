@@ -4,7 +4,8 @@ const mongoose = require("mongoose");
 const configs = {
     useNewUrlParser: true,
     useUnifiedTopology: true,
-    useCreateIndex: true
+    useCreateIndex: true,
+    useFindAndModify: false
 };
 
 mongoose.connect(process.env.MONGODB_URI, configs);
